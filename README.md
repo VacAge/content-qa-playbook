@@ -14,6 +14,7 @@
 | [checklists/mobile-app.md](checklists/mobile-app.md) | Проверка контента в мобильном приложении |
 | [checklists/devtools.md](checklists/devtools.md) | Что смотреть в браузерных инструментах разработчика |
 | [templates/bug-report.md](templates/bug-report.md) | Шаблон отчёта о дефекте контента |
+| [examples/bug-report-filled.md](examples/bug-report-filled.md) | Пример заполненного отчёта о дефекте контента |
 | [templates/content-task.md](templates/content-task.md) | Шаблон задачи на правку контента |
 | [templates/release-check.md](templates/release-check.md) | Чек-лист релиза контента |
 
