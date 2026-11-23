@@ -1,0 +1,47 @@
+name: Content change
+description: Request a content change with acceptance criteria
+title: "[Content change] "
+labels: ["content"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What changes
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why (goal)
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: Page or screen, languages, app version
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source of truth
+      description: Link or file that the new content must match
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] Price matches the source file
+        - [ ] Works on 390, 768, 1440 px
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: Deadlines, legal wording, template restrictions
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline and priority

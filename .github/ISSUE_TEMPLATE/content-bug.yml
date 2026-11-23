@@ -1,0 +1,63 @@
+name: Content bug
+description: Report a content defect on a website or in a mobile app
+title: "[Content bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: URL or app screen, section, language version
+      placeholder: https://example.com/tariffs/smart, block "Terms", ru
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - critical (price, terms, legal info)
+        - high
+        - medium
+        - low
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser and version, device, OS, app version, screen width
+      placeholder: Chrome 132, Windows 11, 1440 px; app 5.2.0, Android 15
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Compare with the source of truth ...
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Screenshots, console or network logs, app version, source of truth file
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who is affected and what happens if it is not fixed
+  - type: textarea
+    id: after
+    attributes:
+      label: What to check after the fix
